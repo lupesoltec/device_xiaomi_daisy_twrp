@@ -27,3 +27,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_verifier \
     update_engine_sideload
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore=msm8953
