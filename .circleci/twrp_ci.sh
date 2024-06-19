@@ -34,10 +34,10 @@ API_BOT="$api"
 # put device product/device name/device codename
 VENDOR="xiaomi"
 DEVICE="Redmi 6 pro"
-CODENAME="sakura"
+CODENAME="daisy"
 
 # Put the url for the device tree on github and branch
-DEVICE_TREE="https://github.com/ItsVixano/android_device_xiaomi_sakura_twrp"
+DEVICE_TREE="https://github.com/ItsVixano/android_device_xiaomi_daisy_twrp"
 DEVICE_BRANCH="android-9.0-official"
 
 # Check https://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni branches for that

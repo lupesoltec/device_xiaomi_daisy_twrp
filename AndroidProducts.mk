@@ -9,4 +9,4 @@
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_DIR)/init
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/twrp_sakura.mk
+	$(LOCAL_DIR)/twrp_daisy.mk
