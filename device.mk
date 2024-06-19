@@ -23,9 +23,9 @@ AB_OTA_POSTINSTALL_CONFIG += \
 # Boot control
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti.recovery \
-    bootctrl.tissot.recovery
+    bootctrl.daisy.recovery
 
-PRODUCT_VENDOR_PROPERTIES += ro.hardware.bootctrl=tissot
+PRODUCT_VENDOR_PROPERTIES += ro.hardware.bootctrl=daisy
 
 # Crypto
 PRODUCT_PACKAGES += \
@@ -38,8 +38,8 @@ PRODUCT_PACKAGES += \
     libprocinfo.recovery
 
 PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/tissot/system/apex/com.android.runtime/bin/crash_dump32:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/crash_dump32 \
-    $(OUT_DIR)/target/product/tissot/system/apex/com.android.runtime/bin/crash_dump64:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/crash_dump64
+    $(OUT_DIR)/target/product/daisy/system/apex/com.android.runtime/bin/crash_dump32:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/crash_dump32 \
+    $(OUT_DIR)/target/product/daisy/system/apex/com.android.runtime/bin/crash_dump64:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/crash_dump64
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -47,8 +47,8 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service
 
 PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/tissot/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service \
-    $(OUT_DIR)/target/product/tissot/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
+    $(OUT_DIR)/target/product/daisy/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.gatekeeper@1.0-service \
+    $(OUT_DIR)/target/product/daisy/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/hw/android.hardware.gatekeeper@1.0-impl.so
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -56,13 +56,9 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-service
 
 PRODUCT_COPY_FILES += \
-    $(OUT_DIR)/target/product/tissot/system/lib64/libkeymaster3device.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libkeymaster3device.so \
-    $(OUT_DIR)/target/product/tissot/vendor/bin/hw/android.hardware.keymaster@3.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.keymaster@3.0-service \
-    $(OUT_DIR)/target/product/tissot/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/hw/android.hardware.keymaster@3.0-impl.so
-
-# LED
-PRODUCT_PACKAGES += \
-    charger_led
+    $(OUT_DIR)/target/product/daisy/system/lib64/libkeymaster3device.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/libkeymaster3device.so \
+    $(OUT_DIR)/target/product/daisy/vendor/bin/hw/android.hardware.keymaster@3.0-service:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/android.hardware.keymaster@3.0-service \
+    $(OUT_DIR)/target/product/daisy/vendor/lib64/hw/android.hardware.keymaster@3.0-impl.so:$(TARGET_COPY_OUT_RECOVERY)/root/system/lib64/hw/android.hardware.keymaster@3.0-impl.so
 
 # Proprietary
 PRODUCT_COPY_FILES += \
