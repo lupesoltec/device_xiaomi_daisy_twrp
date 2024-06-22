@@ -1,11 +1,9 @@
-# android_device_xiaomi_sakura
+# android_device_xiaomi_daisy
 
-For building TWRP for Xiaomi Redmi 6 pro
+For building TWRP for Xiaomi Mi A2 lite (daisy)
 
 To compile:
 
 ```
-. build/envsetup.sh && breakfast sakura eng && mka recoveryimage
+. build/envsetup.sh && breakfast daisy eng && mka recoveryimage
 ```
-
-Kernel source: [TWRP-Mi-A2-Lite/twrp_kernel_xiaomi_daisy](https://github.com/TWRP-Mi-A2-Lite/twrp_kernel_xiaomi_daisy)

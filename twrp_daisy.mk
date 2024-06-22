@@ -5,23 +5,23 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := sakura
+PRODUCT_RELEASE_NAME := daisy
 
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 
 # Inherit from hardware-specific part of the product configuration
-$(call inherit-product, device/xiaomi/sakura/device.mk)
+$(call inherit-product, device/xiaomi/daisy/device.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := sakura
-PRODUCT_NAME := twrp_sakura
+PRODUCT_DEVICE := daisy
+PRODUCT_NAME := twrp_daisy
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi 6 pro
+PRODUCT_MODEL := Mi A2 lite
 PRODUCT_MANUFACTURER := Xiaomi
 

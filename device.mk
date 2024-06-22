@@ -4,6 +4,29 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# A/B
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+# A/B OTA dexopt package
+PRODUCT_PACKAGES += otapreopt_script
+
+# A/B OTA dexopt update_engine hookup
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.1-impl-qti.recovery \
+    bootctrl.daisy.recovery
+
+PRODUCT_VENDOR_PROPERTIES += ro.hardware.bootctrl=daisy
+
 # Prop Overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.keystore=msm8953 \
@@ -35,5 +58,6 @@ RECOVERY_LIBRARY_SOURCE_FILES += \
 
 # Qcom Decryption
 PRODUCT_PACKAGES += \
+    cppreopts.sh \
     qcom_decrypt \
     qcom_decrypt_fbe
