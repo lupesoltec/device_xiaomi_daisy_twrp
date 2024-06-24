@@ -10,10 +10,6 @@
 /firmware       vfat    /dev/block/bootdevice/by-name/modem                     flags=display="Firmware";fsflags="ro";mounttodecrypt
 /modem          emmc    /dev/block/bootdevice/by-name/modem                     flags=display="Modem";backup=1;slotselect
 
-# EFS
-/efs1           emmc    /dev/block/bootdevice/by-name/modemst1                  flags=backup=1;display="EFS"
-/efs2           emmc    /dev/block/bootdevice/by-name/modemst2                  flags=backup=1;subpartitionof=/efs1
-
 # Persist
 /persist        ext4    /dev/block/bootdevice/by-name/persist                   flags=display="Persist";fsflags="ro"
 /persist_image  emmc    /dev/block/bootdevice/by-name/persist                   flags=display="Persist";backup=1;flashimg=1
@@ -26,5 +22,5 @@
 /system_image   emmc    /dev/block/bootdevice/by-name/system                    flags=display="System";backup=1;flashimg=1;slotselect
 
 # Removable storage
-/sdcard1        auto    /dev/block/mmcblk1p1                                    flags=display="MicroSD";removable;storage;wipeingui
+/external_sd    auto    /dev/block/mmcblk1p1                                    flags=display="MicroSD";removable;storage;wipeingui
 /usb_otg        auto    /dev/block/sda1             /dev/block/sda              flags=display="USB OTG";removable;storage;wipeingui
