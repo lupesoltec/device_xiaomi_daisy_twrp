@@ -43,10 +43,6 @@ PLATFORM_SECURITY_PATCH := 2127-12-31
 VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 PRODUCT_ENFORCE_VINTF_MANIFEST := true
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(LOCAL_PATH):libinit_daisy
-TARGET_RECOVERY_DEVICE_MODULES := libinit_daisy
-
 # Kernel
 BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 androidboot.bootdevice=7824900.sdhci androidboot.selinux=permissive audit=0
 BOARD_KERNEL_BASE := 0x80000000
