@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-TARGET_USES_BQ_MSM8953_COMMON_TREE := true
+TARGET_USES_MSM8953_COMMON_TREE := true
 
 # Inherit AOSP product makefiles
 $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
