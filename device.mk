@@ -8,7 +8,7 @@
 MSM8953_INCLUDE_CRYPTO_FBE := true
 MSM8953_LEGACY_CRYPTO := true
 
-# Inherit from mithorium-common
+# Inherit from msm8953-common
 $(call inherit-product, device/bq/msm8953-common/msm8953.mk)
 
 # Soong namespaces

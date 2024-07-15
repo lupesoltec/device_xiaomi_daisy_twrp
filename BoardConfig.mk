@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from common mithorium-common
-include device/bq/msm8953-common/BoardConfigCommon.mk
+# Inherit from common msm8953-common
+include device/xiaomi/msm8953-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/bq/bardock_pro
+DEVICE_PATH := device/xiaomi/daisy
 
 # Kernel
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
@@ -16,9 +16,9 @@ TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
 # Ramdisk
-BOARD_RECOVERYIMAGE_MAX_RAMDISK_SIZE := 20971520
-BOARD_RAMDISK_USE_LZMA := true
-LZMA_RAMDISK_TARGETS := recovery
+#BOARD_RECOVERYIMAGE_MAX_RAMDISK_SIZE := 20971520
+#BOARD_RAMDISK_USE_LZMA := true
+#LZMA_RAMDISK_TARGETS := recovery
 
 # Recovery
 TARGET_RECOVERY_DEVICE_DIRS += $(DEVICE_PATH)
