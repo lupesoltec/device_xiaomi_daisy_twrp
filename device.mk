@@ -27,12 +27,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overrides
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=tissot \
+    PRODUCT_DEVICE=daisy \
     PRODUCT_NAME=$(PRODUCT_RELEASE_NAME) \
-    TARGET_DEVICE=tissot
+    TARGET_DEVICE=daisy
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.product=tissot
+    ro.build.product=daisy
 
 # Blacklist
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \

@@ -1,4 +1,4 @@
-# TWRP (FBE support) Device Tree for Xiaomi Mi A1 &  (Tissot)
+# TWRP (FBE support) Device Tree for Xiaomi Mi A2 Lite & (daisy)
 
 ## Spec Sheet
 
@@ -7,17 +7,16 @@
 | CPU                     | Octa-core 2.0 GHz Cortex-A53      |
 | Chipset                 | Qualcomm MSM8953 Snapdragon 625   |
 | GPU                     | Adreno 506                        |
-| Memory                  | 4 GB                         	  |
-| Shipped Android Version | 7.1.1                             |
+| Memory                  | 3/4 GB                         	  |
+| Shipped Android Version | 8.1.0                             |
 | Storage                 | 32/64 GB                          |
-| MicroSD                 | Up to 256 GB                      |
-| Battery                 | 3080 mAh (non-removable)          |
-| Dimensions              | 156 x 76 x 7.3 mm                 |
-| Display                 | 1920x1080 pixels, 5.5 (~401 PPI)  |
-| Rear Camera             | 12 MP, LED flash                  |
-| Front Camera            | 5 MP                              |
-| Release Date            | September 2017                      |
+| Battery                 | Non-removable Li-Po 4000 mAh      |
+| Dimensions              | 149.3 x 71.7 x 8.8 mm             |
+| Display                 | 1080 x 2280 pixels (~432 ppi)     |
+| Rear camera 1           | 12 MP, f/2.2, 1.25 μm, PDAF       |
+| Rear camera 2           | 5 MP, f/2.2, 1.12 μm, depth sensor|
+| Front camera            | 5 MP, f/2.0                       |
 
 ## Device Picture
 
-![Xiaomi Mi A1](https://camo.githubusercontent.com/635fb336bc97147d31d59c043c8f98264af8941f/68747470733a2f2f312e62702e626c6f6773706f742e636f6d2f2d56526a6a7237574945544d2f576439695375754c3665492f414141414141414142506b2f384735516553635978323471763136756a5147502d37546145396e56554e674151434c63424741732f733630302f6d692d61315f616c6c636f6c6f7273312e706e67 "Xiaomi Mi A1")
+![Xiaomi Mi A2 Lite](https://i01.appmifile.com/webfile/globalimg/products/pc/D1S/black_phone.png "Xiaomi Mi A2 Lite in black")

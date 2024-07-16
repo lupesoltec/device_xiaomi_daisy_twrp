@@ -15,7 +15,7 @@
 # components.
 
 # Default device path
-LOCAL_PATH := device/xiaomi/tissot
+LOCAL_PATH := device/xiaomi/daisy
 
 # Architecture
 TARGET_ARCH := arm64
@@ -37,7 +37,7 @@ BOARD_PROVIDES_BOOTCTRL := true
 BOARD_PROVIDES_GPTUTILS := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := tissot
+TARGET_BOOTLOADER_BOARD_NAME := daisy
 TARGET_NO_BOOTLOADER := true
 
 # Build env.

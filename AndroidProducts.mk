@@ -16,7 +16,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_tissot.mk
+    $(LOCAL_DIR)/twrp_daisy.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_tissot-eng
+    twrp_daisy-eng
