@@ -1,4 +1,4 @@
-# TWRP (FBE support) Device Tree for Xiaomi Redmi Note 4 & 4x (Mido)
+# TWRP (FBE support) Device Tree for Xiaomi Mi A2 Lite & (daisy)
 
 ## Spec Sheet
 
@@ -7,17 +7,16 @@
 | CPU                     | Octa-core 2.0 GHz Cortex-A53      |
 | Chipset                 | Qualcomm MSM8953 Snapdragon 625   |
 | GPU                     | Adreno 506                        |
-| Memory                  | 2/3/4 GB                          |
-| Shipped Android Version | 6.0.1                             |
+| Memory                  | 3/4 GB                         	  |
+| Shipped Android Version | 8.1.0                             |
 | Storage                 | 32/64 GB                          |
-| MicroSD                 | Up to 256 GB                      |
-| Battery                 | 4100 mAh (non-removable)          |
-| Dimensions              | 151 x 76 x 8.5 mm                 |
-| Display                 | 1920x1080 pixels, 5.5 (~401 PPI)  |
-| Rear Camera             | 13 MP, LED flash                  |
-| Front Camera            | 5 MP                              |
-| Release Date            | January 2017                      |
+| Battery                 | Non-removable Li-Po 4000 mAh      |
+| Dimensions              | 149.3 x 71.7 x 8.8 mm             |
+| Display                 | 1080 x 2280 pixels (~432 ppi)     |
+| Rear camera 1           | 12 MP, f/2.2, 1.25 μm, PDAF       |
+| Rear camera 2           | 5 MP, f/2.2, 1.12 μm, depth sensor|
+| Front camera            | 5 MP, f/2.0                       |
 
 ## Device Picture
 
-![Redmi Note 4](http://i01.appmifile.com/webfile/globalimg/7/537557F3-A4F1-2490-E9D3-138B2A11DBF6.png "Redmi Note 4")
+![Xiaomi Mi A2 Lite](https://i01.appmifile.com/webfile/globalimg/products/pc/D1S/black_phone.png "Xiaomi Mi A2 Lite in black")
