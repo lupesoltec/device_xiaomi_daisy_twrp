@@ -5,17 +5,33 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from the common Open Source product configuration
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+# A/B
+PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_sideload \
+    update_verifier
+
+# A/B OTA dexopt package
+PRODUCT_PACKAGES += otapreopt_script
+
+# A/B OTA dexopt update_engine hookup
+AB_OTA_POSTINSTALL_CONFIG += \
+    RUN_POSTINSTALL_system=true \
+    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+    FILESYSTEM_TYPE_system=ext4 \
+    POSTINSTALL_OPTIONAL_system=true
+
+# Boot control
+PRODUCT_PACKAGES += \
+    android.hardware.boot@1.1-impl-qti.recovery \
+    bootctrl.daisy.recovery
+
+PRODUCT_VENDOR_PROPERTIES += ro.hardware.bootctrl=daisy
 
 # qcom standard decryption
 PRODUCT_PACKAGES += \
     qcom_decrypt \
     qcom_decrypt_fbe
-
-# Resolution
-TARGET_SCREEN_HEIGHT := 1920
-TARGET_SCREEN_WIDTH := 1080
 
 # Health HAL
 PRODUCT_PACKAGES += \
@@ -24,17 +40,3 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Overrides
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=daisy \
-    PRODUCT_NAME=$(PRODUCT_RELEASE_NAME) \
-    TARGET_DEVICE=daisy
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.build.product=daisy
-
-# Blacklist
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST += \
-    ro.bootimage.build.date.utc \
-    ro.build.date.utc
